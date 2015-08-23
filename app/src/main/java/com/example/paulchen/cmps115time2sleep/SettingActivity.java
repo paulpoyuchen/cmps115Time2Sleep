@@ -133,7 +133,7 @@ public class SettingActivity extends Activity {
                 }
 
 
-                Intent intent = new Intent(SettingActivity.this, AlarmActivity.class);
+                Intent intent = new Intent(SettingActivity.this, DisplayNotification.class);
                 intent.putExtra("hoursSetting", hourSetting);
                 intent.putExtra("minutesSetting", minuteSetting);
                 intent.putExtra("sleepTime", sleepTime);

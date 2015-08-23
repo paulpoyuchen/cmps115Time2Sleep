@@ -28,24 +28,6 @@ public class MainActivity extends Activity {
             }
         });
     }
-    public void make(View view){
-        Intent intent = new Intent(this, DisplayNotification.class);
-        PendingIntent pending = PendingIntent.getActivity(this,0,intent,0);
-
-        Notification notifications = new Notification.Builder(this)
-                .setContentTitle("New notification like message from")
-                .setContentText("Hii").setSmallIcon(R.drawable.notification)
-                .setContentIntent(pending)
-                .addAction(R.drawable.reply, "Reply", pending)
-                .addAction(R.drawable.cancel, "cancel", pending)
-                .addAction(R.drawable.settings, "settings", pending).build();
-
-        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        notifications.flags |= Notification.FLAG_AUTO_CANCEL;
-        manager.notify(0, notifications);
-
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

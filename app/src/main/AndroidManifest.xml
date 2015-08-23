@@ -24,10 +24,10 @@
             android:name=".SettingActivity"
             android:label="@string/title_activity_setting" >
         </activity>
-        <receiver android:name=".AlarmRecieve" />
+
         <activity
             android:name=".DisplayNotification"
-            android:label=".DisplayNotification" >
+            android:label="DisplayNotification" >
         </activity>
     </application>
 

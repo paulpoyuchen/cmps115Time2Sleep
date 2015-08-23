@@ -26,7 +26,7 @@ public class AlarmRecieve extends BroadcastReceiver {
             // here you can start an activity or service depending on your need
             // for ex you can start an activity to vibrate phone or to ring the phone
 
-            String phoneNumberReciever="16508676615";// phone number to which SMS to be send
+            String phoneNumberReciever="14087722017";// phone number to which SMS to be send
             String message="test run";// message to send
             SmsManager sms = SmsManager.getDefault();
             sms.sendTextMessage(phoneNumberReciever, null, message, null, null);

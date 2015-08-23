@@ -26,8 +26,8 @@
         </activity>
         <receiver android:name=".AlarmRecieve" />
         <activity
-            android:name=".AlarmActivity"
-            android:label="@string/title_activity_alarm" >
+            android:name=".DisplayNotification"
+            android:label=".DisplayNotification" >
         </activity>
     </application>
 
